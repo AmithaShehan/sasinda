@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* color variables */
+  --HEADER-BG: #1a202c;
+  --SAMPLE-BORDER: 1px solid white;
+
+
+  /* font related */
+  --GREY-TEXT: #7A7A7A;
+  --WHITE-TEXT: #FFF;
+  --LINK-COLOR: #FFF;
+  --LINK-HOVER: #7A7A7A;
+  --LINK-ACTIVE: #717171;
+  --FONT-FAMILY: "Roboto", Times, serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+.header {
+  background-color: var(--HEADER-BG);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  padding-top: 200px;
+}
+
+.hero {
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-image {
+  width: 200px;
+  height: 200px;
+  background-image: url("./Images/Sasinda\ Chandula\ 400x399.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.hero p{
+ color: var(--WHITE-TEXT);
+ padding: 10px;
+ text-align: center;
+ font-size: 1rem;
+ font-family: var(--FONT-FAMILY);
+ font-weight: 300;
+ line-height: 1.4;
+}
+
+.header a {
+ color: var(--LINK-COLOR);
+}
+
+.header a:visited{
+ color: var(--LINK-COLOR);
+}
+
+.header a:focus, a:hover {
+ color: var(--LINK-HOVER);
+}
+
+.header a:active{
+ color: var(--LINK-HOVER);
+}
+
+.hero-description {
+  width: 600px;
+  padding: 10px;
+  color: var(--WHITE-TEXT);
+  font-family: var(--FONT-FAMILY);
+}
+
+.hero-description h2{
+ font-size: 3rem;
+}
+
+.hero-description p {
+ font-size: 1.1rem;
+ margin-top: 10px;
+ line-height: 1.4;
+}
+
+.hero-description a {
+ font-size: 1.2rem;
+}
